@@ -30,7 +30,7 @@
         sym {
             display-name = "SYM";
             bindings = <
-&trans  &none  &kp GRAVE  &kp MINUS  &kp LS(UNDER)  &kp LS(COLON)  &kp SEMI  &kp LS(POUND)  &kp LS(DLLR)  &kp LS(AMPS)  &none  &trans  &trans  &kp LS(LT)  &kp LS(LBRC)  &kp LBKT  &kp LS(LPAR)  &kp SQT  &kp COMMA  &kp DOT  &kp LS(QMARK)  &kp LS(PIPE)  &none  &trans  &trans  &kp LS(GT)  &kp LS(RBRC)  &kp RBKT  &kp LS(RPAR)  &kp LS(DQT)  &kp LS(PLUS)  &kp EQUAL  &kp FSLH  &kp BSLH  &none  &trans  &kp ESCAPE  &trans  &kp ESCAPE  &trans  &trans  &trans
+&trans  &kp LS(EXCL)  &kp GRAVE  &kp MINUS  &kp LS(UNDER)  &kp LS(COLON)  &kp SEMI  &kp LS(POUND)  &kp LS(DLLR)  &kp LS(AMPS)  &kp LS(CARET)  &trans  &trans  &kp LS(LT)  &kp LS(LBRC)  &kp LBKT  &kp LS(LPAR)  &kp SQT  &kp COMMA  &kp DOT  &kp LS(QMARK)  &kp LS(PIPE)  &kp LS(STAR)  &trans  &trans  &kp LS(GT)  &kp LS(RBRC)  &kp RBKT  &kp LS(RPAR)  &kp LS(DQT)  &kp LS(PLUS)  &kp EQUAL  &kp FSLH  &kp BSLH  &kp LS(PRCNT)  &trans  &kp ESCAPE  &trans  &kp ESCAPE  &trans  &trans  &trans
             >;
         };
 

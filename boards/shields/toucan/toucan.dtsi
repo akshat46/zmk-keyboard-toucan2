@@ -154,5 +154,16 @@
                 &zip_scroll_transform INPUT_TRANSFORM_X_INVERT
             >;
         };
+
+        // Trackpad speed presets (base scaler above is 1.0x).
+        // These stack on top when their layer is active.
+        slow_speed {
+            layers = <6>;                          // spd_slow -> 0.5x
+            input-processors = <&zip_xy_scaler 1 2>;
+        };
+        med_speed {
+            layers = <7>;                          // spd_med -> 0.75x
+            input-processors = <&zip_xy_scaler 3 4>;
+        };
     };
 };

@@ -10,7 +10,7 @@
 #define CONF     4
 #define MOUSE    5
 #define SPD_SLOW 6
-#define SPD_MED  7
+#define SPD_FAST 7
 
 / {
     conditional_layers { compatible = "zmk,conditional-layers"; };
@@ -18,13 +18,13 @@
     behaviors {
         // Cycle trackpad speed presets by tap count:
         //   1 tap  -> 0.5x  (spd_slow)
-        //   2 taps -> 0.75x (spd_med)
-        //   3 taps -> 1.0x  (base, no speed layer)
+        //   2 taps -> 0.75x (base, no speed layer)
+        //   3 taps -> 1.0x  (spd_fast)
         speed_td: speed_td {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <250>;
-            bindings = <&to SPD_SLOW>, <&to SPD_MED>, <&to BASE>;
+            bindings = <&to SPD_SLOW>, <&to BASE>, <&to SPD_FAST>;
         };
     };
 
@@ -75,7 +75,7 @@
         };
 
         spd_slow {
-            display-name = "SPD 0.5";
+            display-name = "S0.5";
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
@@ -84,8 +84,8 @@
             >;
         };
 
-        spd_med {
-            display-name = "SPD 0.75";
+        spd_fast {
+            display-name = "S1";
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans

@@ -145,7 +145,8 @@
         compatible = "zmk,input-listener";
         status = "disabled";
         device = <&trackpad_split>;
-        input-processors = <&zip_xy_scaler 3 4>, <&zip_scroll_scaler 1 20>, <&zip_zoom_mapper>, <&is_touching_processor>, <&swipe_button_mapper>;
+        input-processors = <&zip_xy_scaler 4 5>, <&zip_scroll_scaler 1 20>, <&zip_zoom_mapper>, <&is_touching_processor>, <&swipe_button_mapper>;
+        // base 0.80x
         scroller {
             layers = <1 2>;
             input-processors = <
@@ -158,12 +159,12 @@
         // Trackpad speed presets (base scaler above is 0.75x).
         // These stack on top when their layer is active.
         slow_speed {
-            layers = <6>;                          // spd_slow -> 0.5x  (0.75 * 2/3)
-            input-processors = <&zip_xy_scaler 2 3>;
+            layers = <6>;                          // spd_slow -> 0.5x  (0.80 * 5/8)
+            input-processors = <&zip_xy_scaler 5 8>;
         };
         fast_speed {
-            layers = <7>;                          // spd_fast -> 1.0x  (0.75 * 4/3)
-            input-processors = <&zip_xy_scaler 4 3>;
+            layers = <7>;                          // spd_fast -> 1.3x  (0.80 * 13/8)
+            input-processors = <&zip_xy_scaler 13 8>;
         };
     };
 };

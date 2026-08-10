@@ -148,7 +148,7 @@
         input-processors = <&zip_xy_scaler 4 5>, <&zip_scroll_scaler 1 20>, <&zip_zoom_mapper>, <&is_touching_processor>, <&swipe_button_mapper>;
         // base 0.80x
         scroller {
-            layers = <1 2>;
+            layers = <2>;   // scroll only on sym layer; nav uses normal pointer
             input-processors = <
                 &zip_xy_to_scroll_mapper
                 &zip_scroll_scaler 1 20

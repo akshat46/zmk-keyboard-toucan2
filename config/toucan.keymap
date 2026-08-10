@@ -35,7 +35,7 @@
         nav {
             display-name = "NAV";
             bindings = <
-&kp LG(GRAVE)  &kp LC(GRAVE)  &kp LG(W)  &kp LG(F)  &kp LS(LG(F))  &none  &kp F3  &kp LG(LEFT_ARROW)  &kp PAGE_UP  &kp F4  &kp LS(LG(N0))  &kp LS(LG(X))  &trans  &kp LCTRL  &kp LEFT_ALT  &kp LEFT_SHIFT  &kp LCMD  &none  &kp F2  &kp LEFT  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans  &trans  &kp LC(LS(F9))  &none  &none  &kp LC(LA(LG(N)))  &none  &kp F1  &kp LG(RIGHT_ARROW)  &kp PAGE_DOWN  &kp F7  &none  &kp LA(LS(O))  &none  &trans  &kp C_PLAY  &trans  &kp DELETE  &trans
+&kp LG(GRAVE)  &kp LC(GRAVE)  &kp LG(W)  &kp LG(F)  &kp LS(LG(F))  &none  &kp F3  &kp LG(LEFT_ARROW)  &kp PAGE_UP  &kp F4  &kp LS(LG(V))  &kp LS(LG(X))  &trans  &kp LCTRL  &kp LEFT_ALT  &kp LEFT_SHIFT  &kp LCMD  &none  &kp F2  &kp LEFT  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans  &trans  &kp LC(LS(F9))  &none  &none  &kp LC(LA(LG(N)))  &none  &kp F1  &kp LG(RIGHT_ARROW)  &kp PAGE_DOWN  &kp F7  &none  &kp LA(LS(O))  &none  &trans  &kp C_PLAY  &trans  &kp DELETE  &trans
             >;
         };
 
